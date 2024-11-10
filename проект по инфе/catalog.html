@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="design.ico">
+    <title>Каталог предметов</title>
+    <link rel="stylesheet" href="styles.css"> <!---->
+</head>
+<body>
+    <div class="header">     
+        <button onclick="goToHomePage()">Учебный Дом</button>
+        <span class="catalog main-page" onclick="goToCatalogPage()">Каталог</span>
+        <span class="account" onclick="goToAccountPage()">Личный кабинет</span>
+    </div>
+    
+    <!-- Поисковая форма -->
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Введите запрос...">
+        <button onclick="searchQuery()">Поиск</button>
+    </div>
+    <div class="catalog-container">
+        <!-- Первый ряд кнопок -->
+        <button class="catalog-btn" id="emptyButton1"></button>
+        <button class="catalog-btn" id="emptyButton2"></button>
+        <button class="catalog-btn" id="emptyButton3"></button>
+        <button class="catalog-btn" id="emptyButton4"></button>
+    
+        <!-- Второй ряд кнопок -->
+        <button class="catalog-btn" id="emptyButton5"></button>
+        <button class="catalog-btn" id="emptyButton6"></button>
+        <button class="catalog-btn" id="emptyButton7"></button>
+        <button class="catalog-btn" id="emptyButton8"></button>
+    </div>
+    
+    
+    <script src="script.js"></script> <!-- Подключаем внешний JS файл -->
+</body>
+</html>

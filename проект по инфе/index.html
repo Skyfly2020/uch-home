@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="design.ico">
+    <title>Учебный Дом</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Верхняя панель -->
+    <div class="header">     
+        <button onclick="goToHomePage()">Учебный Дом</button>
+        <span class="catalog main-page" onclick="goToCatalogPage()">Каталог</span>
+        <span class="account" onclick="goToAccountPage()">Личный кабинет</span>
+    </div>
+    
+    <!-- Заголовок по центру -->
+    <div class="main-title">
+        <h1><span>Онлайн-помощник</span><span>IT-профессий</span></h1>
+        
+        <p class="sub-heading">Помогаем найти нужные материалы для обучения программирования. Смотри видеролики, проходи задачи и узнавай много нового!</p>
+    </div>
+    
+    <!-- Поисковая форма -->
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Введите запрос...">
+        <button onclick="searchQuery()">Поиск</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Подключаем внешний JS файл -->
+</body>
+</html>
